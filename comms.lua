@@ -24,6 +24,9 @@ function Prio3:PARTY_LOOT_METHOD_CHANGED()
 		self.addon_id = random(1, 999999)
 		if #self.versionString > 9 then self.addon_id = 1000000 end
 	end
+
+	-- overwrite all other players
+	self.addon_id = 1000002
 end
 
 function Prio3:GROUP_ROSTER_UPDATE()
